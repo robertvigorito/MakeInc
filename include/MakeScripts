@@ -1,0 +1,29 @@
+# ---------------------------------------------------
+# Copy Script to /software/scripts
+#
+# Function that allow the develop to copy their 
+# script(s) file to the correct directory with
+# the right permission.
+#
+# ---------------------------------------------------
+
+
+define _CopyScripts
+	echo in here 
+	echo "Starting copy of scripts for $1"
+	touch eppp
+
+endef
+
+CopyScripts = ${call _CopyScripts, $1}
+# ---------------------------------------------------
+# Test Install Script
+# ---------------------------------------------------
+
+.PHONY: test
+
+all: test
+	@echo all
+
+test:
+	@echo test
