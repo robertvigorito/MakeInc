@@ -1,1 +1,2 @@
-Testing 3
+#! /bin/bash
+echo Testing 3

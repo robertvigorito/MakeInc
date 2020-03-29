@@ -26,13 +26,8 @@ SCRIPTS.FILES = $(shell find $(SCRIPTS.ROOT) -type f -name "*")
 .PHONY: test all install
 
 test:
-	build=".build/scripts/:
 	@mkdir -p .build/scripts
-
-	@for f in $(SCRIPTS.FILES) ; do \
-		echo $$f ; \
-		cp -f $$f $build ; \
-	done
+	install -m 555 $(SCRIPTS.FILES) .build/scripts/ ; \
 
 all: clean test
 	@echo do something
