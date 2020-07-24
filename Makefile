@@ -7,7 +7,7 @@ include ./include/MakeScripts
 # ---------------------------------------------------
 
 AUTHER			= Robert Vigorito
-PACKAGE			= MakeInc
+PACKAGE			= make-inc
 VERSION 		= 0.0.1
 DESCRIPTION 	= Make include functions for dcc makefile
 
